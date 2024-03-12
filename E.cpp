@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 long long int Calc (long long int n, long long int k);
 
@@ -16,10 +17,7 @@ int main ()
         return 0;
     }
 
-    for (long long int j = 1; j < d; j++)
-    {
-        n = n * 10;
-    }
+    n = n * pow(10, d - 1);
 
     printf("%lld", n);
     return 0;
